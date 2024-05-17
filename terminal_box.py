@@ -160,7 +160,7 @@ class Terminal_Box(QPlainTextEdit):
                 if command == list(TERMINAL_COMMAND_LIST.keys())[3]:
                     if len(args) == 0:
                         error_format(self)
-                        self.appendPlainText("'color' должен принимать флаг!\Например: color 2")
+                        self.appendPlainText("'color' должен принимать флаг!\nНапример: color 2")
                         currect_format(self)
                         self.appendPlainText(CURSOR_TEXT)
                     else:
