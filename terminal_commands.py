@@ -45,7 +45,7 @@ def terminal_echo(text_box: QPlainTextEdit, string: str) -> None:
         text_box.appendPlainText(CURSOR_TEXT)
     else:
         error_format(text_box) # Изменение йвета текста на красный
-        text_box.appendPlainText("'echo' должна принимать строку как параметр!\Например: echo привет, мир!")
+        text_box.appendPlainText("'echo' должна принимать строку как параметр!\nНапример: echo привет, мир!")
         currect_format(text_box)
         text_box.appendPlainText(CURSOR_TEXT) # Изменение йвета текста на стандартный
 
